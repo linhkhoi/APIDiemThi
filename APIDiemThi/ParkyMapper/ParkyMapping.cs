@@ -33,6 +33,7 @@ namespace APIDiemThi.ParkyMapper
             CreateMap<Student, StudentCreateDto>().ReverseMap();
             CreateMap<Student, StudentUpdateDto>().ReverseMap();
             CreateMap<Student, StudentViewDto>().ReverseMap();
+            CreateMap<Student, StudentScoreViewDto>().ReverseMap();
 
             CreateMap<Subject, SubjectCreateDto>().ReverseMap();
             CreateMap<Subject, SubjectUpdateDto>().ReverseMap();
@@ -46,6 +47,7 @@ namespace APIDiemThi.ParkyMapper
             CreateMap<Users, UserUpdateDto>().ReverseMap();
             CreateMap<Users, UserViewDto>().ReverseMap();
             CreateMap<Users, UserLoginDto>().ReverseMap();
+            CreateMap<Users, UserStudentScoreViewDto>().ReverseMap();
 
         }
     }

@@ -59,6 +59,7 @@ namespace APIDiemThi.Controllers
                 objList.HasPrevious
             };
             Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
+            Response.Headers.Add("access-control-expose-headers", "*");
 
             var objDto = new List<StudentViewDto>();
 

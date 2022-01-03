@@ -38,7 +38,7 @@ namespace APIDiemThi.Repository
 
         public PagedList<Score> GetScores(PageParamers ownerParameters)
         {
-            return  PagedList<Score>.ToPagedList(_context.Score.Include(p=> p.Subject).Include(p => p.Student),
+            return  PagedList<Score>.ToPagedList(_context.Score.Include(p=> p.Subject).Include(p => p.Student).Include(p => p.Student.User),
                     ownerParameters.PageNumber,
                     ownerParameters.PageSize);
         }

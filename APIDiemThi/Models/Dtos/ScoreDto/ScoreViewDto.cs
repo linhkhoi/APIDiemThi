@@ -8,7 +8,7 @@ namespace APIDiemThi.Models.Dtos.ScoreDto
 {
     public class ScoreViewDto
     {
-        public int StudentId { get; set; }
+        public StudentDto.StudentScoreViewDto Student { get; set; }
         public SubjectDto.SubjectViewDto Subject { get; set; }
 
         public double? MidScore { get; set; }
