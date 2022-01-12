@@ -3,7 +3,7 @@
 # BÀI TẬP LỚN MÔN LẬP TRÌNH CƠ SƠ DỮ LIỆU
 ## Thông tin môn học
 - Lớp: **DH18IT82**
-- Học kỳ: **1 (2021-2022)**
+- Học kỳ: **3 (2020-2021)**
 - Giảng viên: **Lê Ngọc Hiếu**
 ## Thông tin sinh viên thực hiện
 
