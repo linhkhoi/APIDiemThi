@@ -168,7 +168,15 @@ namespace APIDiemThi.Repository
 
         public async Task<bool> UpdateUser(Users User)
         {
-            _db.Users.Update(User);
+            //_db.Users.Update(User);
+            //return await Save();
+                _db.Users.Attach(User);
+            _db.Entry(User).Property(x => x.Username).IsModified = true;
+            _db.Entry(User).Property(x => x.Role).IsModified = true;
+            _db.Entry(User).Property(x => x.FullName).IsModified = true;
+            _db.Entry(User).Property(x => x.DateOfBirth).IsModified = true;
+            _db.Entry(User).Property(x => x.Gender).IsModified = true;
+            _db.Entry(User).Property(x => x.Address).IsModified = true;
             return await Save();
         }
 
